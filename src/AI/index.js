@@ -316,7 +316,7 @@ self.addEventListener('message', event => {
       break;
     case 'chessboard':
       ai.load(data.entity);
-      setTimeout(() => self.postMessage(ai.decide()), 600);
+      setTimeout(() => self.postMessage(ai.decide()), 3000);
       break;
   }
 });
